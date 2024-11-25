@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240718190810">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Унифицированная среда разработки безопасного отечественного ПО">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="index.html" class="header__logo">
+					<img src="img/logo.svg" class="ibg ibg--contain" alt="Image">
+				</a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="documentation.html" class="menu__link">Документация и ресурсы</a>
+							</li>
+							<li class="menu__item"><a href="guidelines.html" class="menu__link">Методические рекомендации</a>
+							</li>
+							<li class="menu__item"><a href="analysis.html" class="menu__link">Состав средств анализа</a></li>
+						</ul>
+						<div class="header__buttons">
+							<a href="#" class="header__open header__button">Войти</a>
+							<a href="feedback.html" class="header__feedback header__button">Обратная связь</a>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page-top">
+				<div class="page-top__container">
+					<img src="img/bgp.webp" alt="Image">
+					<h1 class="page-top__title title">Форма обратной связи</h1>
+				</div>
+			</section>
+			<section class="feedback">
+				<div class="feedback__container">
+					<div class="feedback__body section-body">
+						<div class="section-body__left">
+							<h2 class="feedback__title title">Заполните форму и наши специалисты свяжутся с вами в ближайшее
+								время</h2>
+						</div>
+						<div class="section-body__right">
+							<form class="feedback__form" action="#" method="get">
+								<input data-required placeholder="ФИО*" type="text" class="feedback__input input">
+								<input data-required placeholder="Должность*" type="text" class="feedback__input input">
+								<input data-required="phone" data-inputmask="'mask': '+7 999 999 99 99', 'repeat': 1, 'greedy' : false" type="tel" placeholder="+7 999 001 01 01*" class="feedback__input input">
+								<input data-required="email" placeholder="Е-mail" type="email" class="feedback__input input" name="form[]">
+								<textarea data-autoheight placeholder="Сообщение" name="feedback__message" id="message" class="feedback__input input"></textarea>
+								<div class="feedback__politicaltop">
+									* – обязательные для заполнения поля. Телефон и e-mail будут использоваться
+									для
+									обратной связи
+								</div>
+								<div class="feedback__political">
+									<div class="checkbox">
+										<label class="checkbox__label">
+											<input data-required class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<span class="checkbox__text"><span>
+													Подтверждаю, что ознакомлен и согласен с условиями
+													обработки <a href="#">персональных
+														данных</a>
+												</span></span>
+										</label>
+									</div>
+								</div>
+								<button type="submit" class="feedback__button">Отправить</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top">
+					<a href="index.html" class="footer__logo">
+						<img src="img/logo.svg" class="ibg ibg--contain" alt="Image">
+					</a>
+					<nav class="footer__links">
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="documentation.html" class="footer__link">Документация и ресурсы</a>
+							</li>
+							<li class="footer__item">
+								<a href="guidelines.html" class="footer__link">Методические рекомендации</a>
+							</li>
+							<li class="footer__item">
+								<a href="analysis.html" class="footer__link">Состав средств анализа</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__copyright">Copyright © 2024 ИСП РАН.</div>
+					<div class="footer__political">Продолжая использовать наш сайт, вы даете согласие на обработку файлов
+						cookies и других пользовательских данных, в соответствии с <a href="">Политикой конфиденциальности.</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20240718190810"></script>
+</body>
+
+</html>
